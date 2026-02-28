@@ -18,3 +18,13 @@
 本ツールと同じディレクトリで、NDL公式のリポジトリをクローンしてください。
 ```bash
 git clone https://github.com/ndl-lab/ndlocr-lite
+
+### 2. 必要なライブラリのインストール
+以下のコマンドを実行して、必要な依存ライブラリをインストールしてください。
+```bash
+# 基本ライブラリ
+pip install opencv-python mss numpy pyyaml omegaconf tqdm onnxruntime
+
+# PyTorch (CPU版)
+pip install torch torchvision --index-url [https://download.pytorch.org/whl/cpu](https://download.pytorch.org/whl/cpu)
+
