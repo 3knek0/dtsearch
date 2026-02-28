@@ -22,3 +22,22 @@ git clone https://github.com/ndl-lab/ndlocr-lite
 pip install opencv-python mss numpy tkinter pyyaml omegaconf tqdm onnxruntime
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
+
+※requirements.txt から一括導入する場合はバージョン競合に注意してください。
+　onnxruntime のエラーが出る場合は、個別に pip install onnxruntime を実行してください。
+
+### ３．モデルファイルの配置
+ndlocr-lite/src/model/ 内に、以下の .onnx モデルファイルが存在することを確認してください。
+
+```
+deim-s-1024x1024.onnx
+parseq-ndl-16x768-100-tiny-165epoch-tegaki2.onnx
+parseq-ndl-16x256-30-tiny-192epoch-tegaki3.onnx
+parseq-ndl-16x384-50-tiny-146epoch-tegaki2.onnx
+```
+
+## 🚀 使い方
+```bash
+python app.py
+```
+
