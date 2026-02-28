@@ -41,3 +41,6 @@ parseq-ndl-16x384-50-tiny-146epoch-tegaki2.onnx
 python app.py
 ```
 
+## 📜 ライセンス
+このプロジェクトは MITライセンス の下で公開されています。
+詳細は LICENSE ファイルをご覧ください。
