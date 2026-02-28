@@ -17,7 +17,7 @@ git clone https://github.com/ndl-lab/ndlocr-lite
 ### ２．依存ライブラリのインストール
 以下のコマンドを実行して、必要なライブラリを導入してください。
 
-'''
+```
 pip install opencv-python mss numpy tkinter pyyaml omegaconf tqdm onnxruntime
 pip install torch torchvision --index-url [https://download.pytorch.org/whl/cpu](https://download.pytorch.org/whl/cpu)
-'''
+```
