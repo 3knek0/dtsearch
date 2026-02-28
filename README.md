@@ -7,25 +7,14 @@
 - **視覚的なフィードバック**: 見つかった場所を赤い枠で強調表示します。
 - **軽量動作**: ONNXランタイムを利用し、CPU環境でも動作可能です。
 
-## 📸 デモ (動作イメージ)
-1. アプリを起動すると入力ダイアログが表示されます。
-2. 検索したい文字を入力して Enter を押します。
-3. 画面内で一致した箇所が数秒間ハイライトされます。
+## 📸 動作イメージ
+1. アプリを起動すると、デスクトップの最前面に入力ダイアログが表示されます。
+2. 検索したい文字を入力して Enter を押すと、画面全体のOCR解析が始まります。
+3. 文字が見つかった場合、その場所が赤い枠で数秒間ハイライトされます。
 
 ## 🛠 セットアップ
 
 ### 1. 外部エンジンのクローン
 本ツールと同じディレクトリで、NDL公式のリポジトリをクローンしてください。
 ```bash
-git clone [https://github.com/ndl-lab/ndlocr-lite](https://github.com/ndl-lab/ndlocr-lite)
-
-### 2.必要なライブラリのインストール
-pip install opencv-python mss numpy tkinter pyyaml omegaconf tqdm onnxruntime
-pip install torch torchvision --index-url [https://download.pytorch.org/whl/cpu](https://download.pytorch.org/whl/cpu)
-
-### 3.モデルファイルの配置
-ndlocr-lite/src/model/ 内に必要な .onnx モデルファイルが配置されていることを確認してください。
-
-### 4.使い方
-python app.py
-
+git clone https://github.com/ndl-lab/ndlocr-lite
